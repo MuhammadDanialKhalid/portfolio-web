@@ -5,16 +5,16 @@
     box-sizing: border-box;
 }
 
-/* body{
+body{
     background-color: #1f242d;
-} */
-
+}
 a{
     color: white;
 }
 .navbar{
-    position: fixed;
+    /* position: fixed; */
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,6 +41,13 @@ a{
 .navbar ul{
     display: flex;
 }
+@media screen and (max-width: 700px) {
+    .navbar ul{
+        flex-wrap: wrap; 
+        
+    }
+}
+
 .navbar ul li{
     list-style: none;
     margin-left:35px ;
@@ -56,6 +63,7 @@ a{
     transition: .5s;
 }
 
+
 .home{
     display: flex; 
     height: 100vh;
@@ -67,6 +75,7 @@ a{
     animation: content 1.5s  1s  linear forwards; 
 
 }
+
 
 .home-intro h1{
     font-size: 55px;
